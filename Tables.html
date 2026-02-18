@@ -16,5 +16,20 @@
     <a href="ReservationComplete.html"><button type="submit" class="tab" style="padding: 10px 20px;margin-left: 0px; font-size: 33px;">Thanks for patronizing Nancy's Restaurant</button></a>
     </form>
 </ul>
+    <script>
+            (function(){
+            const form = document.getElementById('reservationForm');
+            if(!form) return;
+            form.addEventListener('submit', function(){
+                const data = {
+                    name: document.getElementById('nameInput')?.value || '',
+                    email: document.getElementById('emailInput')?.value || '',
+                    phone: document.getElementById('phoneInput')?.value || ''
+                };
+                try{ localStorage.setItem('reservationData', JSON.stringify(data)); }catch(e){ }
+            });
+        })();
+    </script>
 </body>
+
 </html>
