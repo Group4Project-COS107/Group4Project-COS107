@@ -17,17 +17,16 @@
     </form>
 </ul>
     <script>
-            (function(){
+        (function(){
             const form = document.getElementById('reservationForm');
             if(!form) return;
-            form.addEventListener('submit', function(){
-                const data = {
-                    name: document.getElementById('nameInput')?.value || '',
-                    console.log('Submitting reservation:', data);
-                    email: document.getElementById('emailInput')?.value || '',
-                    phone: document.getElementById('phoneInput')?.value || '',
-                    
+            const name = document.getElementById('nameInput');
+            const email = document.getElementById('emailInput');
+            const phone = document.getElementById('phoneInput');
                 };
+                function validate();{if(phoneDigits.length < 7 || phoneDigits.length > 15){ setError(phone, 'Please enter a valid phone number (7-15 digits).'); valid = false; }
+                return valid;
+            }
                 try{ localStorage.setItem('reservationData', JSON.stringify(data)); }catch(e){ }
             });
         })();
@@ -35,6 +34,7 @@
 </body>
 
 </html>
+
 
 
 
