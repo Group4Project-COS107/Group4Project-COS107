@@ -24,9 +24,9 @@
                 const data = {
                     name: document.getElementById('nameInput')?.value || '',
                     email: document.getElementById('emailInput')?.value || '',
-                    phone: document.getElementById('phoneInput')?.value || ''
+                    phone: document.getElementById('phoneInput')?.value || '',
+                    console.log('Submitting reservation:', data);
                 };
-                console.log('Submitting reservation:', data);
                 try{ localStorage.setItem('reservationData', JSON.stringify(data)); }catch(e){ }
             });
         })();
@@ -34,4 +34,5 @@
 </body>
 
 </html>
+
 
