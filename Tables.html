@@ -23,9 +23,10 @@
             form.addEventListener('submit', function(){
                 const data = {
                     name: document.getElementById('nameInput')?.value || '',
+                    console.log('Submitting reservation:', data);
                     email: document.getElementById('emailInput')?.value || '',
                     phone: document.getElementById('phoneInput')?.value || '',
-                    console.log('Submitting reservation:', data);
+                    
                 };
                 try{ localStorage.setItem('reservationData', JSON.stringify(data)); }catch(e){ }
             });
@@ -34,5 +35,6 @@
 </body>
 
 </html>
+
 
 
