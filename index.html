@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nancy's  Restaurant Home Page</title>
+</head>
+<body>
+    <link rel="stylesheet" href="restaurant.css">
+    <h1 class="curved-rainbow">Nancy's Restaurant</h1>
+    <form id="L-S" action="restaurant.html" method="get">
+        <label for="emailInput"><input id="Email" name="Email" class="Info" type="email" placeholder="Email" required><br></label>
+        <label for="passwordInput"><input id="Password" class="Info" type="password" placeholder="Password" name="Password" required><br></label>
+        <a href="restaurant.html"><button placeholder="Login" type="submit" id="login" class="login">Sign In</button></a>
+        <button onclick="showAlert()" placeholder="Sign Up" type="submit" id="Sign_Up" class="Sign_Up"> Sign Up</button>
+        <script>
+            function showAlert(){
+                alert("You have successfully signed up");
+            }
+        </script>
+    </form>
+</body>
+</html>
