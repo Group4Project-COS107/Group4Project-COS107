@@ -1,9 +1,11 @@
 body{
     background-size: cover;
-    background-position: cover;
+    background-position: center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
     font-family: 'Arial Narrow Bold', MV Boli,;
     background-image: url('Restaurant Food Background Images – Browse 7,437,764 Stock Photos, Vectors, and Video _ Adobe Stock - Google Chrome 15_02_2026 4_50_53 pm.png');
-    background-size: 100%;
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
@@ -18,6 +20,10 @@ h1{
 #Button1{
     font-size: 30px;
     color: #b29e9e;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     background-image: url('Menu design background Images - Free Download on Freepik - Google Chrome 16_02_2026 10_42_50 pm.png');
     background-position: 20px;
     border-radius: 20px;
@@ -38,6 +44,10 @@ h1{
     background-image: url('Top view of sketchbook and fresh vegetables colorful bell peppers green chili peppers tomatoes and black peppercorns on rustic wood _ Free Photo - Google Chrome 16_02_2026 10_22_46 pm.png');
     background-position: 30px;
     border-radius: 20px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     margin: 30px;
     padding:100px 190px;
@@ -204,4 +214,3 @@ h1{
     -o-border-radius: 20px;
     cursor: pointer;
 }
-
